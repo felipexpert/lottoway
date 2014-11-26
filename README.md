@@ -14,6 +14,3 @@ LottoWay
 <h2>How to Run</h2>
 <pre>java -jar lottoway.jar</pre>
 <p><em>The lottoway file is in lib directory</em></p>
-
-<h2>How to run</h2>
-<pre></pre>
