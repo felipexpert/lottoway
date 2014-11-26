@@ -1,5 +1,6 @@
 package br.com.felipeAplicativos.gui;
 import static br.com.felipeAplicativos.logica.loteria.Loteria.word;
+
 import javax.swing.JPanel;
 
 import java.awt.FlowLayout;
@@ -11,10 +12,12 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 
 import br.com.felipeAplicativos.gui.interfaces.LinguaManipulavel;
+import br.com.felipeAplicativos.logica.Principal;
 import br.com.felipeAplicativos.logica.linguagem.Text;
 import br.com.felipeAplicativos.logica.loteria.Loteria;
 import br.com.felipeAplicativos.logica.loteria.Modalidade;
 import br.com.felipeAplicativos.logica.loteria.exceptions.ApostaVotoException;
+
 
 
 import java.awt.BorderLayout;
@@ -33,7 +36,10 @@ class PnlModoDeJogo extends JPanel implements ActionListener, LinguaManipulavel{
 	 * Create the panel.
 	 */
 	private JLabel lblInformacao;
-	private JButton btnCurto, btnMuitoCurto, btnMeioCurto, btnRegular, btnDuradouro, btnMuitoDuradouro;
+	private JButton btnCurto, btnMuitoCurto, 
+					btnMeioCurto, btnRegular, 
+					btnDuradouro, btnMuitoDuradouro,
+					btnRegras;
 	
 	public PnlModoDeJogo() {
 		setLayout(new BorderLayout(5, 5));
@@ -79,6 +85,10 @@ class PnlModoDeJogo extends JPanel implements ActionListener, LinguaManipulavel{
 		btnMuitoDuradouro.addActionListener(this);
 		pnlModos2.add(btnMuitoDuradouro);
 		
+		btnRegras = new JButton();
+		btnRegras.addActionListener(this);
+		pnlModos2.add(btnRegras);
+		
 		@SuppressWarnings("serial")
 		JLabel imagem = new JLabel() {
 			@Override
@@ -109,8 +119,11 @@ class PnlModoDeJogo extends JPanel implements ActionListener, LinguaManipulavel{
 			modalidade = Modalidade.REGULAR;
 		} else if(e.getSource() == btnDuradouro) {
 			modalidade = Modalidade.DURADOURO;
-		} else {
+		} else if(e.getSource() == btnMuitoDuradouro){
 			modalidade = Modalidade.MUITO_DURADOURO;
+		} else {
+			Principal.bemVindoMessage(null);
+			return;
 		}
 		
 		try {
@@ -130,6 +143,7 @@ class PnlModoDeJogo extends JPanel implements ActionListener, LinguaManipulavel{
 		btnMuitoCurto.setText(word(Text.MUITO_CURTO));
 		btnMuitoDuradouro.setText(word(Text.MUITO_DURADOURO));
 		btnRegular.setText(word(Text.REGULAR));
+		btnRegras.setText(word(Text.COMO_JOGAR));
 	}
 
 }

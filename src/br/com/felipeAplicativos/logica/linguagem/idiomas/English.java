@@ -35,6 +35,7 @@ public class English implements Linguagem{
 		textos.put(BEM_VINDO, "Welcome");
 		textos.put(BOT_PALPITE_EXCEPTION, "It's not possible to change the bot's hunch");
 		textos.put(COD_IMAGEM_EXC, "The image code hasn't been inserted");
+		textos.put(COMO_JOGAR, "How to play");
 		textos.put(CONFIRMAR, "Confirm");
 		textos.put(COPAS, "Cups");
 		textos.put(CURTO, "Short");

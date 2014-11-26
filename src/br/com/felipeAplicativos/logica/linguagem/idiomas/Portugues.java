@@ -35,6 +35,7 @@ public class Portugues implements Linguagem{
 		textos.put(BEM_VINDO, "Bem-vindo");
 		textos.put(BOT_PALPITE_EXCEPTION, "Não é possível alterar o palpite de um bot");
 		textos.put(COD_IMAGEM_EXC, "O código da imagem não foi inserido");
+		textos.put(COMO_JOGAR, "Como jogar");
 		textos.put(CONFIRMAR, "Confirmar");
 		textos.put(COPAS, "Copas");
 		textos.put(CURTO, "Curto");
