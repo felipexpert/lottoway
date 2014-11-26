@@ -101,7 +101,7 @@ public class Bot extends Participante {
 			cartasSelecionaveisSet = null;
 			
 			while(cartasSelecionaveisList.size() > 5) {
-				//esta parte gera um index v·lido dentro dos limites do set
+				//esta parte gera um index v√°lido dentro dos limites do set
 				int indexASerRemovido = (int)Math.round(Math.random() * (cartasSelecionaveisList.size() - 1));
 				
 				cartasSelecionaveisList.remove(indexASerRemovido);

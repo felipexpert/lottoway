@@ -134,13 +134,13 @@ public class Loteria {
 	}
 	
 	/**
-	 * O primeiro item da lista é uma lista com os vencedores
-	 * O segundo é uma lista com os perdedores
-	 * O terceiro é uma lista com os falidos
+	 * O primeiro item da lista Ã© uma lista com os vencedores
+	 * O segundo Ã© uma lista com os perdedores
+	 * O terceiro Ã© uma lista com os falidos
 	 * 
 	 * @param cartas
 	 * @param granaApostada
-	 * @return uma lista com três listas
+	 * @return uma lista com trÃªs listas
 	 * @throws GranaParticipanteInvalidoException
 	 * @throws ApostaVotoException 
 	 */
@@ -200,7 +200,7 @@ public class Loteria {
 		return resultado;
 	}
 	/**
-	 * Cada jogador insirirá o quanto quer apostar, e este método retornará a média
+	 * Cada jogador insirirÃ¡ o quanto quer apostar, e este mÃ©todo retornarÃ¡ a mÃ©dia
 	 * @param apostas
 	 * @return o valor da aposta de acordo com os votos dos jogadores
 	 */
@@ -214,7 +214,7 @@ public class Loteria {
 	}
 	
 	/**
-	 * Cada jogador insirirá o quanto quer apostar, e este método retornará a média
+	 * Cada jogador insirirÃ¡ o quanto quer apostar, e este mÃ©todo retornarÃ¡ a mÃ©dia
 	 * @param apostas
 	 * @return o valor da aposta de acordo com os votos dos jogadores
 	 */
@@ -235,16 +235,16 @@ public class Loteria {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Bem-vindos à loteria\n");
+		System.out.println("Bem-vindos Ã  loteria\n");
 		String op = "";
 		float grana = 0f;
 		
 		System.out.println("\n******************\n" + 
 								   "REGRAS:\n" +
 								   "   Neste jogo cada participante escolhe cinco palpites,\n" +
-								   "depois de definidos os palpites, o computador retirará\n" +
-								   "cinco cartas aleatorias do baralho e se caso você acertar\n" +
-								   "pelo menos uma com seu palpite, você é vitorioso na rodada.\n\n" +
+								   "depois de definidos os palpites, o computador retirarÃ¡\n" +
+								   "cinco cartas aleatorias do baralho e se caso vocÃª acertar\n" +
+								   "pelo menos uma com seu palpite, vocÃª Ã© vitorioso na rodada.\n\n" +
 							       "MODO DE JOGO\n" + 
 								   "1 - curto\n" + 
 								   "2 - medio\n" + 

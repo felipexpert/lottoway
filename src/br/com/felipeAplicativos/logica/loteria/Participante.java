@@ -175,8 +175,8 @@ public class Participante {
 	}
 	
 	/**
-	 * @return o ultimo index possÌvel de acordo com a modalidade
-	 * na instancia da Loteria (que È um Singleton).
+	 * @return o ultimo index poss√≠vel de acordo com a modalidade
+	 * na instancia da Loteria (que √© um Singleton).
 	 */
 	public int ultimoIndexPossivel() {
 		float[] valores = Loteria.getInstance().getModalidade().getValores();
@@ -197,7 +197,7 @@ public class Participante {
 			
 			retirarGrana(number.floatValue());
 			
-			assert false : "number n„o pÙde ser convertido nem em Double nem em Long";
+			assert false : "number n√£o p√¥de ser convertido nem em Double nem em Long";
 		} catch (ParseException e) {
 			throw new GranaParticipanteInvalidoException(granaApostada);
 		}
